@@ -8,7 +8,7 @@ PARANOID_BOOTANIMATION_NAME := XHDPI
 OVERLAY_TARGET := pa_xhdpi
 
 # include ParanoidAndroid common configuration
-include vendor/ps/config/ps_common.mk
+include vendor/ps/config/pa_common.mk
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/n7000/full_n7000.mk)
