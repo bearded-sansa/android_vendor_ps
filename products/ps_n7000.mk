@@ -1,6 +1,9 @@
 # Check for target product
 ifeq (ps_n7000,$(TARGET_PRODUCT))
 
+# Inherit device configuration
+$(call inherit-product, device/samsung/n7000/full_n7000.mk)
+
 # Define PA bootanimation size
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
@@ -27,8 +30,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_VERSION_TAGS=release-keys \
     PRIVATE_BUILD_DESC="GT-N7000-user 4.0.3 IML74K ZCLP6 release-keys" \
     BUILD_FINGERPRINT="samsung/GT-N7000/GT-N7000:4.0.3/IML74K/ZCLP6:user/release-keys"
-
-# Inherit device configuration
-$(call inherit-product, device/samsung/n7000/full_n7000.mk)
 
 endif
