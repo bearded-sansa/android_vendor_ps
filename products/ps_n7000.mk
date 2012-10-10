@@ -24,8 +24,6 @@ PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=ps.n7000.$(shell date +%m%d%y).$(she
 # overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_NUMBER=ZCLP6 \
-    PRODUCT_NAME=GT-N7000 \
-    TARGET_DEVICE=GT-N7000 \
     TARGET_BUILD_TYPE=user \
     BUILD_VERSION_TAGS=release-keys \
     PRIVATE_BUILD_DESC="GT-N7000-user 4.0.3 IML74K ZCLP6 release-keys" \
